@@ -5,6 +5,8 @@ const fs=require('fs');
 // const indexFile=fs.createReadStream('./index.html');
 // 创建一个web服务器
 const server=http.createServer((req,res)=>{//req请求对象
+    console.log(req);
+    
     if(req.url=='/'){
         const indexFile=fs.createReadStream('./index.html');
         // http响应头
